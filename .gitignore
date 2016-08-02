@@ -1,0 +1,8 @@
+# Log files
+*.log
+
+# Vim
+*.swp
+
+# Deployment files
+node_modules/
