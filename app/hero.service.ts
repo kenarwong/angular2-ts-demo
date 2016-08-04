@@ -16,6 +16,7 @@ export class HeroService {
     }
 
     getHeroes() {
+        // return Promise.resolve(HEROES);  // Replaced with api call
         return this.http.get(this.heroesUrl)
         .toPromise()
         .then(response => response.json().data as Hero[])
